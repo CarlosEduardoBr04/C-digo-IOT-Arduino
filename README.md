@@ -10,7 +10,7 @@ Componentes Arduino
  1 Kit Módulo Leitor Rfid Mfrc522 Mifare,
  1 Potenciômetro Linear 5KΩ,
  7 Jumper Femea,
- 23 Jumper Macho,
+ 23 Jumper Macho
 
 Leitura de cartões RFID usando o módulo MFRC522.
 Autenticação e leitura de dados de setores específicos nos cartões MIFARE.
