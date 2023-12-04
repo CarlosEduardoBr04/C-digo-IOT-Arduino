@@ -1,0 +1,20 @@
+**Instruções para o Projeto Arduino:**
+
+**Passo 1: Baixar a Biblioteca MFRC522**
+
+- Abra o aplicativo Arduino IDE que utilizamos nas aulas de Arduino.
+- Na barra de menu, vá no canto esquerdo da tela e depois em "Library Manager". 
+- Selecione a biblioteca correta, identificando-a pela imagem fornecida. Certifique-se de baixar a biblioteca dentro do próprio aplicativo Arduino IDE, pois ele automatiza a instalação na pasta "libraries" do Arduino.
+
+**Passo 2: Copiar e Colar o Código do Bloco de Notas "ArduinoPI"**
+
+- Abra o bloco de notas e localize o código denominado "ArduinoPI".
+- Selecione todo o código, clique com o botão direito e escolha a opção "Copiar".
+- Volte para o Arduino IDE e na janela em branco, clique com o botão direito e escolha "Colar" para inserir o código.
+- Verifique o código clicando em "Verificar" na barra de ferramentas.
+
+**Passo 3: Enviar o Código para o Arduino**
+
+- Certifique-se de que o Arduino está conectado ao computador via cabo USB.
+- Na barra de ferramentas, clique no ícone de seta ("Carregar") para enviar o código ao Arduino.
+- Aguarde o processo de carregamento e confira se não há erros reportados pelo IDE.
