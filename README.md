@@ -1,81 +1,80 @@
-#C-digo-IOT-Arduino
+# ⚡ Código-IOT-Arduino
 
+🚨 This repository contains the source code for an RFID card reading system using an MFRC522 module and an LCD display with Arduino. The project enables authentication and reading of data stored on MIFARE cards, displaying the information on the LCD.
 
-Este repositório contém o código-fonte para um sistema de leitura de cartões RFID utilizando um módulo MFRC522 e um display LCD com Arduino. O projeto permite a autenticação e leitura de dados armazenados em cartões MIFARE, exibindo as informações no LCD.
+## 💻 Resources
 
-Recursos:
+### Arduino Components:
+1. Arduino Uno R3
+2. USB Cable for Arduino
+3. LCD 16×2 Display with Blue Backlight
+4. RFID Reader Module Kit Mfrc522 Mifare
+5. Linear Potentiometer 5KΩ
+6. 7 Female Jumper Wires
+7. 23 Male Jumper Wires
 
-Componentes Arduino
- 1 Arduino Uno R3,
- 1 Cabo USB para Arduino,
- 1 Display LCD 16×2 Backlight Azul,
- 1 Kit Módulo Leitor Rfid Mfrc522 Mifare,
- 1 Potenciômetro Linear 5KΩ,
- 7 Jumper Femea,
- 23 Jumper Macho
+### Features:
+- Reading RFID cards using the MFRC522 module.
+- Authentication and reading of data from specific sectors on MIFARE cards.
+- Displaying information on the LCD.
+- Modular structure for easy expansion and integration.
 
-Leitura de cartões RFID usando o módulo MFRC522.
-Autenticação e leitura de dados de setores específicos nos cartões MIFARE.
-Exibição de informações no LCD.
-Estrutura modular para fácil expansão e integração.
+## > 📖 Instructions:
 
-Instruções:
+### > ⚡ Connecting the RFID Module to Arduino:
+The wiring diagram for connecting the RFID module to the digital Arduino is the same as for the physical Arduino. The user just needs to bring the card close. Connect the module as shown in the image, noting that its power supply is 3.3V. We will use an LCD display to show the reading message.
 
-Ligação do módulo RFID ao Arduino
+### > 🔧 RFID Reader Pinout:
+The RFID reader has 8 pins following the following connection sequence. Pay attention to the allowed power supply voltage, which in this case is 3.3 volts.
 
-O esquema de ligação do módulo RFID ao Arduino digital é o mesmo do Arduino Fisico , o usuario apenas vai precisar aproximar o cartão. Conecte o módulo conforme a imagem, observando que a alimentação dele é de 3,3V. Vamos utilizar um display LCD para mostrar a mensagen de leitura
+- Pin SDA connected to pin 10 on Arduino.
+- Pin SCK connected to pin 13 on Arduino.
+- Pin MOSI connected to pin 11 on Arduino.
+- Pin MISO connected to pin 12 on Arduino.
+- Pin NC – Not connected.
+- Pin GND connected to GND pin on Arduino.
+- Pin RST connected to pin 9 on Arduino.
+- Pin 3.3 – connected to 3.3V pin on Arduino.
 
-Pinagem Leitor RFID
-O leitor RFID tem 8 pinos que seguem a seguinte sequência de ligação. Atenção à tensão de alimentação permitida neste caso é de 3.3 volts
+### > 🚨 The pins of the LCD display are connected to the Arduino pins as follows 🚨:
+- RS pin of the LCD is connected to digital pin 6 on Arduino.
+- E pin of the LCD is connected to digital pin 7 on Arduino.
+- D4 pin of the LCD is connected to digital pin 5 on Arduino.
+- D5 pin of the LCD is connected to digital pin 4 on Arduino.
+- D6 pin of the LCD is connected to digital pin 3 on Arduino.
+- D7 pin of the LCD is connected to digital pin 2 on Arduino.
 
-Pino SDA ligado na porta 10 do Arduino
-Pino SCK ligado na porta 13 do Arduino
-Pino MOSI ligado na porta 11 do Arduino
-Pino MISO ligado na porta 12 do Arduino
-Pino NC – Não conectado
-Pino GND  ligado no pino GND do Arduino
-Pino RST ligado na porta 9 do Arduino
-Pino 3.3 – ligado ao pino 3.3 V do Arduino
+### > 📚 MFRC522 Library:
+Load the following program onto the Arduino, which uses the MFRC522 library. Unzip the folder and place it inside the LIBRARIES folder of the Arduino IDE.
 
-Os pinos do display LCD estão conectados aos pinos do Arduino da seguinte forma
+The MFRC522 library for Arduino is a software interface that enables communication with the MFRC522 RFID (Radio-Frequency Identification) reader module. This library simplifies the interaction between Arduino and the module, allowing the reading and writing of information on RFID cards.
 
-Pino RS do LCD está conectado ao pino digital 6 no Arduino.
-Pino E do LCD está conectado ao pino digital 7 no Arduino.
-Pino D4 do LCD está conectado ao pino digital 5 no Arduino.
-Pino D5 do LCD está conectado ao pino digital 4 no Arduino.
-Pino D6 do LCD está conectado ao pino digital 3 no Arduino.
-Pino D7 do LCD está conectado ao pino digital 2 no Arduino.
+## > ✨ Main features of the MFRC522 library:
 
-BIBLIOTECA MFRC522
+1. **Module Initialization:**
+   - The library simplifies the initialization of the MFRC522 module, configuring the communication pins correctly.
 
-Carregue o seguinte programa no Arduino, que utiliza a biblioteca MFRC522,  Descompacte a pasta e coloque-a dentro da pasta LIBRARIES da IDE do Arduino.
+2. **Authentication:**
+   - Allows authentication for accessing data blocks on RFID cards using authentication keys A or B.
 
-A biblioteca MFRC522 para Arduino é uma interface de software que permite a comunicação com o módulo leitor de RFID (Radio-Frequency Identification) MFRC522. Esta biblioteca facilita a interação entre o Arduino e o módulo, permitindo ler e gravar informações em cartões RFID.
+3. **Reading and Writing:**
+   - Provides functions to read and write data in specific sectors and blocks of an RFID card.
 
-Principais funcionalidades da biblioteca MFRC522:
+4. **Card Identification:**
+   - The library enables checking the presence of a card and reading its UID (Unique Identifier).
 
-1-Inicialização do Módulo: A biblioteca facilita a inicialização do módulo MFRC522, configurando os pinos de comunicação corretamente.
+5. **Card Halt:**
+   - Allows deactivating communication with a card, rendering it inactive.
 
-2-Autenticação: Permite autenticar o acesso a blocos de dados em cartões RFID usando chaves de autenticação A ou B.
+6. **Card Type:**
+   - Provides information about the type of detected RFID card (e.g., MIFARE Classic, MIFARE Ultralight, etc.).
 
-3-Leitura e Escrita: Oferece funções para ler e escrever dados em setores e blocos específicos de um cartão RFID.
+## > 🚨 Configuration:
 
-4-Identificação de Cartões: A biblioteca permite verificar a presença de um cartão e ler seu UID (Identificador Único).
+- The code is set up to work with the MFRC522 module and an LCD display.
+- Ensure to connect the pins correctly according to the definitions in the code.
+- Customize the MIFARE authentication key as needed.
 
-5-Halt (Parar) do Cartão: Permite desativar a comunicação com um cartão, tornando-o inativo.
+## > 📚 Notes:
 
-6-Tipo de Cartão: Fornece informações sobre o tipo de cartão RFID detectado (por exemplo, MIFARE Classic, MIFARE Ultralight, etc.).
-
-Essa biblioteca é amplamente utilizada em projetos que envolvem controle de acesso, sistemas de identificação, sistemas de pagamento, entre outros, que necessitam da tecnologia RFID para funcionar.
-
-Aproxime o cartão RFID do leitor para iniciar o processo de leitura.
-As informações do cartão, incluindo o UID e dados específicos, serão exibidas no LCD.
-O sistema suporta leitura de dados de setores específicos do cartão MIFARE.
-Configuração:
-
-O código está configurado para funcionar com o módulo MFRC522 e um display LCD.
-Certifique-se de conectar os pinos corretamente de acordo com as definições no código.
-Personalize a chave de autenticação MIFARE conforme necessário.
-Observações:
-
-Este projeto é uma implementação básica e pode ser expandido para incluir mais funcionalidades, como armazenamento em banco de dados ou integração com serviços da IoT.
+- This project is a basic implementation and can be expanded to include more features, such as database storage or integration with IoT services.
