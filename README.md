@@ -1,9 +1,9 @@
-<font color="green">#C-digo-IOT-Arduino</font>
+#C-digo-IOT-Arduino
 
 
 Este repositório contém o código-fonte para um sistema de leitura de cartões RFID utilizando um módulo MFRC522 e um display LCD com Arduino. O projeto permite a autenticação e leitura de dados armazenados em cartões MIFARE, exibindo as informações no LCD.
 
-<font color="green"> Recursos: </font>
+Recursos:
 
 Componentes Arduino
  1 Arduino Uno R3,
