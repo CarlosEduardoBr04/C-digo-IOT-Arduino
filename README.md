@@ -75,6 +75,11 @@ The MFRC522 library for Arduino is a software interface that enables communicati
 - Ensure to connect the pins correctly according to the definitions in the code.
 - Customize the MIFARE authentication key as needed.
 
+  ## 👨‍💻 Author
+
+- [CarlosEduardoBr04](https://github.com/CarlosEduardoBr04)
+- [LuizGustavoSouzaAlmeida](https://github.com/LuizGustavoSouzaAlmeida)
+
 ## > 📚 Notes:
 
 - This project is a basic implementation and can be expanded to include more features, such as database storage or integration with IoT services.
