@@ -1,5 +1,7 @@
 # ⚡ Código-IOT-Arduino
 
+---🌐English🌐---
+
 🚨 This repository contains the source code for an RFID card reading system using an MFRC522 module and an LCD display with Arduino. The project enables authentication and reading of data stored on MIFARE cards, displaying the information on the LCD.
 
 ## 💻 Resources
@@ -83,3 +85,91 @@ The MFRC522 library for Arduino is a software interface that enables communicati
 ## > 📚 Notes:
 
 - This project is a basic implementation and can be expanded to include more features, such as database storage or integration with IoT services.
+
+  ----- 🌐PT-BR | Português do Brasil🌐 -----
+
+  # ⚡ IoT-Arduino Code
+
+🚨 Este repositório contém o código-fonte para um sistema de leitura de cartões RFID usando um módulo MFRC522 e um display LCD com Arduino. O projeto possibilita autenticação e leitura de dados armazenados em cartões MIFARE, exibindo as informações no LCD.
+
+## 💻 Recursos
+
+### Componentes Arduino:
+1. Arduino Uno R3
+2. Cabo USB para Arduino
+3. Display LCD 16×2 com retroiluminação azul
+4. Módulo Leitor RFID Kit Mfrc522 Mifare
+5. Potenciômetro Linear 5KΩ
+6. 7 Cabos de conexão fêmea
+7. 23 Cabos de conexão macho
+
+### Recursos:
+- Leitura de cartões RFID usando o módulo MFRC522.
+- Autenticação e leitura de dados de setores específicos em cartões MIFARE.
+- Exibição de informações no LCD.
+- Estrutura modular para fácil expansão e integração.
+
+## > 📖 Instruções:
+
+### > ⚡ Conectando o Módulo RFID ao Arduino:
+O diagrama de fiação para conectar o módulo RFID ao Arduino digital é o mesmo do Arduino físico. O usuário só precisa aproximar o cartão. Conecte o módulo conforme mostrado na imagem, observando que sua alimentação é de 3,3V. Vamos usar um display LCD para mostrar a mensagem de leitura.
+
+### > 🔧 Layout do Leitor RFID:
+O leitor RFID possui 8 pinos seguindo a sequência de conexão a seguir. Preste atenção na tensão de alimentação permitida, que neste caso é 3,3 volts.
+
+- Pino SDA conectado ao pino 10 no Arduino.
+- Pino SCK conectado ao pino 13 no Arduino.
+- Pino MOSI conectado ao pino 11 no Arduino.
+- Pino MISO conectado ao pino 12 no Arduino.
+- Pino NC – Não conectado.
+- Pino GND conectado ao pino GND no Arduino.
+- Pino RST conectado ao pino 9 no Arduino.
+- Pino 3,3 – conectado ao pino 3,3V no Arduino.
+
+### > 🚨 Configuração dos Pinos do Display LCD:
+- Pino RS do LCD é conectado ao pino digital 6 no Arduino.
+- Pino E do LCD é conectado ao pino digital 7 no Arduino.
+- Pino D4 do LCD é conectado ao pino digital 5 no Arduino.
+- Pino D5 do LCD é conectado ao pino digital 4 no Arduino.
+- Pino D6 do LCD é conectado ao pino digital 3 no Arduino.
+- Pino D7 do LCD é conectado ao pino digital 2 no Arduino.
+
+### > 📚 Biblioteca MFRC522:
+Carregue o seguinte programa no Arduino, que utiliza a biblioteca MFRC522. Descompacte a pasta e coloque-a dentro da pasta LIBRARIES do Arduino IDE.
+
+A biblioteca MFRC522 para Arduino é uma interface de software que permite a comunicação com o módulo leitor RFID MFRC522. Essa biblioteca simplifica a interação entre o Arduino e o módulo, permitindo a leitura e gravação de informações em cartões RFID.
+
+## > ✨ Principais características da biblioteca MFRC522:
+
+1. **Inicialização do Módulo:**
+   - A biblioteca simplifica a inicialização do módulo MFRC522, configurando corretamente os pinos de comunicação.
+
+2. **Autenticação:**
+   - Permite autenticação para acessar blocos de dados em cartões RFID usando chaves de autenticação A ou B.
+
+3. **Leitura e Gravação:**
+   - Fornece funções para ler e gravar dados em setores e blocos específicos de um cartão RFID.
+
+4. **Identificação do Cartão:**
+   - A biblioteca permite verificar a presença de um cartão e ler seu UID (Identificador Único).
+
+5. **Desativação do Cartão:**
+   - Permite desativar a comunicação com um cartão, tornando-o inativo.
+
+6. **Tipo de Cartão:**
+   - Fornece informações sobre o tipo de cartão RFID detectado (por exemplo, MIFARE Classic, MIFARE Ultralight, etc.).
+
+## > 🚨 Configuração:
+
+- O código está configurado para funcionar com o módulo MFRC522 e um display LCD.
+- Certifique-se de conectar os pinos corretamente de acordo com as definições no código.
+- Personalize a chave de autenticação MIFARE conforme necessário.
+
+## 👨‍💻 Autor
+
+- [CarlosEduardoBr04](https://github.com/CarlosEduardoBr04)
+- [LuizGustavoSouzaAlmeida](https://github.com/LuizGustavoSouzaAlmeida)
+
+## > 📚 Observações:
+
+- Este projeto é uma implementação básica e pode ser expandido para incluir mais recursos, como armazenamento em banco de dados ou integração com serviços de IoT.
