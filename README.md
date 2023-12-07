@@ -1,6 +1,6 @@
 # ⚡ Código-IOT-Arduino
 
----🌐English🌐---
+----- 🌐English🌐 -----
 
 🚨 This repository contains the source code for an RFID card reading system using an MFRC522 module and an LCD display with Arduino. The project enables authentication and reading of data stored on MIFARE cards, displaying the information on the LCD.
 
@@ -80,7 +80,7 @@ The MFRC522 library for Arduino is a software interface that enables communicati
   ## 👨‍💻 Author
 
 - [CarlosEduardoBr04](https://github.com/CarlosEduardoBr04)
-- [LuizGustavoSouzaAlmeida](https://github.com/LuizGustavoSouzaAlmeida)
+- [LuizGustavoBr04](https://github.com/LuizGustavoBr04)
 
 ## > 📚 Notes:
 
@@ -168,7 +168,7 @@ A biblioteca MFRC522 para Arduino é uma interface de software que permite a com
 ## 👨‍💻 Autor
 
 - [CarlosEduardoBr04](https://github.com/CarlosEduardoBr04)
-- [LuizGustavoSouzaAlmeida](https://github.com/LuizGustavoSouzaAlmeida)
+- [LuizGustavoBr04](https://github.com/LuizGustavoBr04)
 
 ## > 📚 Observações:
 
